@@ -1,8 +1,5 @@
+import sympy as sp
+from sympy import *
 
 
-
-a = "asin"
-prnt(hola mundo)
-
-
-print(a[0:])
+init_printing(use_unicode=True)
