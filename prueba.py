@@ -23,3 +23,13 @@ print(solveset(Eq(x,1+3),x))
 
 
 
+
+
+
+
+
+
+
+
+
+
