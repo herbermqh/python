@@ -1,13 +1,30 @@
 import sympy as sp
 from sympy import *
+from sympy import init_printing
+init_printing(use_unicode=True)
 
 
+ 
+a,b,c=symbols('a b c') 
 x,y,z = symbols('x y z')
+  
+equation = Eq(x**2 + 2*x,a)
+
+print(pretty(equation))
+print(pretty(solveset(equation,x))) 
 
 
 
 
-print(solveset(Eq(x,1+3),x)) 
+
+
+
+
+# print(latex(equation))
+
+
+
+
 
 
 
