@@ -20,6 +20,7 @@ print(pretty(solveset(equation,x)))
 
 
 
+
 # print(latex(equation))
 
 
