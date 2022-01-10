@@ -16,7 +16,7 @@ print(pretty(solveset(equation,x)))
 
 
 
-
+print(pretty(128-12-84.96))
 
 
 
