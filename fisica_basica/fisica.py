@@ -12,10 +12,6 @@ init_printing(use_unicode=True)
 # F = symbols('F')
 s = symbols('s')
   
-def ecuacion_algebraica(primer_miembro,segundo_miembro,variable):
-    equation = Eq(primer_miembro,segundo_miembro)
-    print(pretty(equation))
-    print(pretty(solveset(equation,variable))) 
 
 def solve_h(primer_miembro,segundo_miembro,incognita):
     equation = Eq(primer_miembro,segundo_miembro)
@@ -60,10 +56,23 @@ def work(**datos):
     print(reemplazo_datos)
     print(resultado)
 
+# work(s4=1,s5=2,F=0.2,hallar='U')
 
-# work(s4=1,s5=3,F=20,hallar=U,U=2)
-work(s4=1,s5=2,F=10,hallar='U')
- 
+
+def ecuacion_algebraica(primer_miembro,segundo_miembro,variable):
+    equation = Eq(primer_miembro,segundo_miembro)
+    print(pretty(equation))
+    print(pretty(solveset(equation,variable))) 
+
+
+v=symbols('v')
+
+ecuacion_algebraica(0+integrate(28+3*s**2,(s,0,3))-2.50*10**3*9.81*3,0.5*(2.50)*10**3*v**2,v)
+
+
+
+
+
 
  
 

@@ -1,31 +1,42 @@
 import sympy as sp
 from sympy import *
-from sympy import init_printing
-init_printing(use_unicode=True)
+import numpy as np
+
+from matplotlib import pyplot as plt
+
+#from sympy import init_session
+#init_session()
+#from sympy import init_printing
+#init_printing()
 
 
- 
-a,b,c=symbols('a b c') 
-x,y,z = symbols('x y z')
-  
-equation = Eq(x**2 + 2*x,a)
+s = symbols('s')
+v = symbols('v')
+m = 10
+T_1 = 0
+T_2 = 0.5*m*v**2
+u_k = 0.2
+g = 9.81
+    
+def F(s):
+    return 25+9*s**2  
 
-print(pretty(equation))
-print(pretty(solveset(equation,x))) 
-
-
-
-
-print(pretty(128-12-84.96))
-
-
-
-
-# print(latex(equation))
+def plot_Fs():
+    x = np.linspace(0,2,num=50)
+    y = F(x)
+    plt.plot(x,y,color='red')
 
 
+# teo_trabajo_energia = Eq(T_1+integrate(F(s),(s,0,s))-m*g*u_k*s,T_2)
+
+def vs(s):
+    eq = solve(Eq(T_1+integrate(F(s),(s,0,s))-m*g*u_k*s,T_2),v)[1] 
+    return eq
 
 
+x = symbols('x')
+
+print(pretty(vs(x)))
 
 
 
