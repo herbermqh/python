@@ -37,8 +37,8 @@ for item in nombre_examen_input:
     else:
         nombre_examen = universidad+"_"+exam+"_"+parcial+"_"+ano_examen+semestre_examen+"_"+fila_examen+"_"+exam_perteneciente
 
-
     #funcion para crear directorios, archivos y capetas del examen
+
     def examen(name_exam):
         #nombres de carpetas
 

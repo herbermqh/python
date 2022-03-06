@@ -9,7 +9,6 @@ from matplotlib import pyplot as plt
 #from sympy import init_printing
 #init_printing()
 
-
 s = symbols('s')
 v = symbols('v')
 m = 10
@@ -19,8 +18,8 @@ u_k = 0.2
 g = 9.81
     
 def F(s):
-    return 25+9*s**2  
 
+    return 25+9*s**2  
 def plot_Fs():
     x = np.linspace(0,2,num=50)
     y = F(x)
@@ -39,22 +38,9 @@ x = symbols('x')
 print(pretty(vs(x)))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def main():
+    # print hello world
+    print("Hello World")
 
 
 

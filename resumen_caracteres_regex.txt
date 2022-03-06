@@ -7,9 +7,9 @@ Metacaracteres:
 \D      - No digitos (0-9)
 \w      - Caracter de palabra (a-z, A-Z, 0-9, _)
 \W      - No caracter de palabra
-\s      - Espacio en blanco (espacio, tab, nueva linea)
+\s      - Espacio en blanco (espacio, tab,nueva linea)
 \S      - No espacio en blanco (espacio, tab, nueva linea)
-.       - Cualquier caracter excepto nueva linea (codicioso - greedy)
+.       - Cualquier caracter excepto nu	eva linea (codicioso - greedy)
 \       - Cancela caracteres especiales
 
 ^       - Inicio de una cadena de caracteres (string)
