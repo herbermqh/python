@@ -13,6 +13,11 @@ nombre_examen_input=[
     "UMSA_MAT__2021_II__psa",
 ]
 
+# sintaxis: UNIVERSIDAD_MATERIA_PARCIAL_ANO_SEMESTRE_FILA_EXAMENPERTENECIENTE
+######################### opcionales:
+# PARCIAL (para el caso de intensivos)
+# FILA
+
 
 for item in nombre_examen_input:
 
